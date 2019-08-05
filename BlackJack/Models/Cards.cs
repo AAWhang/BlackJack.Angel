@@ -47,6 +47,7 @@ namespace BlackJack.Models
         if (choice1 == 1)
         {
           Hands.hit(Hands.PlayerOne);
+          Console.WriteLine(Hands.PlayerOne[Hands.PlayerOne.Count -1].Card);
         }
       }
 
@@ -58,6 +59,7 @@ namespace BlackJack.Models
         if (choice2 == 1)
         {
           Hands.hit(Hands.PlayerTwo);
+          Console.WriteLine(Hands.PlayerTwo[Hands.PlayerTwo.Count -1].Card);
         }
       }
 
